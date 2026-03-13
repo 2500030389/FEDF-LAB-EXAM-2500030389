@@ -1,23 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './Navbar.css'
 
-function Navbar() {
-
+export default function Navbar() {
   return (
-
     <div>
 
       <h2>Event Management</h2>
 
-      <Link to="/">Home</Link> | 
-      <Link to="/register">Register Event</Link> | 
-      <Link to="/events">View Events</Link> | 
-      <Link to="/api">API Demo</Link>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/eventregistration">Add Event</Link>
+        <Link to="/viewevent">View Events</Link>
+        <Link to="/api">API Demo</Link>
+      </nav>
 
     </div>
-
-  );
-
+  )
 }
-
-export default Navbar;
